@@ -4,8 +4,6 @@ var gillFamily = [{name: "john", age: 20},
 {name: "dan", age: 25},
 {name: "robin", age: 60}];
 var aInName = _.filter(gillFamily, function(a){
-	if (a.name.indexOf("a") !== -1){
-		return a.name;
-	}
-});
+	return a.name.indexOf("a") !== -1
+	});
 console.log(aInName);
