@@ -3,8 +3,10 @@ var gillFamily = [{name: "john", age: 20},
 {name: "debbie", age: 55},
 {name: "dan", age: 25},
 {name: "robin", age: 60}];
-var beginsWithD = _.filter (gillFamily, function(d){
-	return d.name.charAt(0) === "d"
+var over26 = _.map(gillFamily, function(age){
+	if(age.age>26){
+		return age.name
+	}	
+	else {return age.name + age.age}
 });
-	
-console.log(beginsWithD);
+console.log(over26);
