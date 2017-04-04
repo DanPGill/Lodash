@@ -3,10 +3,7 @@ var gillFamily = [{name: "john", age: 20},
 {name: "debbie", age: 55},
 {name: "dan", age: 25},
 {name: "robin", age: 60}];
-var over26 = _.map(gillFamily, function(age){
-	if(age.age>26){
-		return age.name
-	}	
-	else {return age.name + age.age}
+var over26 = _.map(gillFamily, function(o){
+	_.remove(over26, o.age>26)
 });
 console.log(over26);

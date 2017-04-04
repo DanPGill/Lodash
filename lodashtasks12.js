@@ -4,7 +4,7 @@ var gillFamily = [{name: "john", age: 20},
 {name: "dan", age: 25},
 {name: "robin", age: 60}];
 var beginsWithD = _.filter (gillFamily, function(d){
-	return d.name.charAt(0) === "d"
+	return d.name.startsWith("d");
 });
 	
 console.log(beginsWithD);
